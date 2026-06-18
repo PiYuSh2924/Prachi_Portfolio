@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prachi Sharma — Creative Portfolio</title>
+  <meta name="description" content="Explore the creative portfolio of Prachi Sharma, featuring social media design, concept videos, product brochures, brand identities, and editorial designs." />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- SIDEBAR OVERLAY -->
+  <div class="sidebar-overlay" id="overlay" onclick="closeSidebar()"></div>
+
+  <!-- HAMBURGER -->
+  <button class="hamburger" id="hamburger" onclick="toggleSidebar()" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <div class="name">Prachi Sharma</div>
+      <div class="title">Creative Portfolio</div>
+    </div>
+
+    <div class="sidebar-divider"></div>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="#introduction" class="active" onclick="setActive(this)">
+            <span class="dot"></span> Introduction
+          </a>
+        </li>
+        <li>
+          <a href="#social-media-posts" onclick="setActive(this)">
+            <span class="dot"></span> Social Media Posts
+          </a>
+        </li>
+        <li>
+          <a href="#concept-videos" onclick="setActive(this)">
+            <span class="dot"></span> Concept Videos
+          </a>
+        </li>
+        <li>
+          <a href="#product-pamphlet" onclick="setActive(this)">
+            <span class="dot"></span> Product Pamphlet
+          </a>
+        </li>
+        <li>
+          <a href="#mock-projects" onclick="setActive(this)">
+            <span class="dot"></span> Mock Projects
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-footer">
+      <a href="https://www.linkedin.com/in/prachi-sharma" target="_blank" rel="noopener noreferrer">
+        <!-- LinkedIn icon -->
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+
+    <!-- ── INTRODUCTION ───────────────────────────── -->
+    <section class="section" id="introduction">
+      <div class="section-eyebrow">Welcome</div>
+      <h1 class="section-title reveal">Hello! I'm<br><em>Prachi Sharma.</em></h1>
+
+      <div class="intro-layout">
+        <div class="reveal" style="transition-delay:0.1s">
+          <div class="prose">
+            <p>
+              I am a passionate and detail-oriented creative professional with a love for storytelling through visuals. Whether it's crafting a scroll-stopping social media post, directing a concept video, or designing a product pamphlet that converts — I bring ideas to life with intention and clarity.
+            </p>
+            <p>
+              Driven by curiosity and a deep appreciation for good design, I am always looking for opportunities to blend creativity with strategy. I believe every piece of content should serve a purpose, resonate with the audience, and leave a lasting impression.
+            </p>
+            <p>
+              When I'm not designing, you'll find me exploring city cafés with a sketchbook, discovering music from across the world, or diving into design documentaries that spark new ideas.
+            </p>
+          </div>
+
+          <div class="skills-grid reveal" style="transition-delay:0.2s">
+            <span class="skill-tag">Adobe Illustrator</span>
+            <span class="skill-tag">Premiere Pro</span>
+            <span class="skill-tag">Canva</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">InDesign</span>
+            <span class="skill-tag">Photoshop</span>
+            <span class="skill-tag">After Effects</span>
+            <span class="skill-tag">Copywriting</span>
+          </div>
+        </div>
+
+        <div class="reveal" style="transition-delay:0.2s">
+          <img src="assets/images/prachi_avatar.png" alt="Prachi Sharma Portrait" class="intro-avatar" />
+        </div>
+      </div>
+
+      <!-- PAGE PAGINATION -->
+      <div class="page-pagination">
+        <span class="pagination-spacer"></span>
+        <a href="#social-media-posts" class="pagination-link next">
+          Social Media Posts <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ── SOCIAL MEDIA POSTS ─────────────────────── -->
+    <section class="section" id="social-media-posts">
+      <div class="section-eyebrow">Creative Work</div>
+      <h2 class="section-title reveal">Social Media<br><em>Posts</em></h2>
+
+      <div class="prose reveal">
+        <p>
+          Designed for Instagram, LinkedIn and Facebook — each post balances brand voice with visual hierarchy to maximize engagement. Created using Canva, Adobe Illustrator and Photoshop.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <div class="card reveal">
+          <div class="card-thumb">
+            <span class="card-thumb-label">①</span>
+            <img src="assets/images/social_post_1.png" alt="Product Launch Carousel Post Graphic" />
+          </div>
+          <div class="card-body">
+            <div class="card-date">Instagram · Jan 2024</div>
+            <h3 class="card-title">Product Launch Carousel</h3>
+            <div class="card-desc">A 5-slide carousel introducing a new product with a cohesive colour story and bold typography.</div>
+            <a href="#" class="card-link">View Post <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+          </div>
+        </div>
+
+        <div class="card reveal" style="transition-delay:0.1s">
+          <div class="card-thumb">
+            <span class="card-thumb-label">②</span>
+            <img src="assets/images/social_post_2.png" alt="Event Awareness Post Graphic" />
+          </div>
+          <div class="card-body">
+            <div class="card-date">LinkedIn · Feb 2024</div>
+            <h3 class="card-title">Event Awareness Post</h3>
+            <div class="card-desc">A professional-yet-warm graphic announcing a community event, designed to drive registrations.</div>
+            <a href="#" class="card-link">View Post <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+          </div>
+        </div>
+
+        <div class="card reveal" style="transition-delay:0.2s">
+          <div class="card-thumb">
+            <span class="card-thumb-label">③</span>
+            <img src="assets/images/social_post_3.png" alt="Quote Graphic Series Post" />
+          </div>
+          <div class="card-body">
+            <div class="card-date">Instagram · Mar 2024</div>
+            <h3 class="card-title">Quote Graphic Series</h3>
+            <div class="card-desc">A recurring weekly series with branded quote graphics that grew follower saves by 40%.</div>
+            <a href="#" class="card-link">View Post <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAGE PAGINATION -->
+      <div class="page-pagination">
+        <a href="#introduction" class="pagination-link prev">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Introduction
+        </a>
+        <a href="#concept-videos" class="pagination-link next">
+          Concept Videos <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ── CONCEPT VIDEOS ─────────────────────────── -->
+    <section class="section" id="concept-videos">
+      <div class="section-eyebrow">Motion Work</div>
+      <h2 class="section-title reveal">Concept<br><em>Videos</em></h2>
+
+      <div class="prose reveal">
+        <p>
+          Short-form concept videos crafted for digital campaigns and brand storytelling. Edited using Adobe Premiere Pro, After Effects and iMovie. Every frame is intentional.
+        </p>
+      </div>
+
+      <div class="video-grid">
+        <div class="video-card reveal">
+          <div class="video-player-box">
+            <div class="play-icon" aria-label="Play Brand Film">
+              <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+            </div>
+          </div>
+          <div class="video-caption">
+            <div class="card-date">Brand Film · 2024</div>
+            <h3 class="card-title">Brand Story — 60 Sec</h3>
+            <div class="card-desc" style="font-size:0.78rem;color:var(--muted);margin-top:4px;">A cinematic short showcasing brand values through lifestyle imagery and motion type.</div>
+          </div>
+        </div>
+
+        <div class="video-card reveal" style="transition-delay:0.1s">
+          <div class="video-player-box">
+            <div class="play-icon" aria-label="Play Product Walkthrough">
+              <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+            </div>
+          </div>
+          <div class="video-caption">
+            <div class="card-date">Product Demo · 2024</div>
+            <h3 class="card-title">Product Walkthrough — 30 Sec</h3>
+            <div class="card-desc" style="font-size:0.78rem;color:var(--muted);margin-top:4px;">A clean screen-recorded demo video with animated callouts for a SaaS product.</div>
+          </div>
+        </div>
+
+        <div class="video-card reveal" style="transition-delay:0.2s">
+          <div class="video-player-box">
+            <div class="play-icon" aria-label="Play Event Reel">
+              <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+            </div>
+          </div>
+          <div class="video-caption">
+            <div class="card-date">Instagram Reel · 2024</div>
+            <h3 class="card-title">Event Reel — 15 Sec</h3>
+            <div class="card-desc" style="font-size:0.78rem;color:var(--muted);margin-top:4px;">Fast-cut highlights reel from a college event with music sync and text overlays.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAGE PAGINATION -->
+      <div class="page-pagination">
+        <a href="#social-media-posts" class="pagination-link prev">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Social Media Posts
+        </a>
+        <a href="#product-pamphlet" class="pagination-link next">
+          Product Pamphlet <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ── PRODUCT PAMPHLET ───────────────────────── -->
+    <section class="section" id="product-pamphlet">
+      <div class="section-eyebrow">Print & Digital</div>
+      <h2 class="section-title reveal">Product<br><em>Pamphlet</em></h2>
+
+      <div class="pamphlet-layout">
+        <div class="pamphlet-preview reveal">
+          <img src="assets/images/pamphlet_preview.png" alt="Tri-fold Skincare Brand Pamphlet Preview Mockup" />
+        </div>
+
+        <div class="pamphlet-details reveal" style="transition-delay:0.15s">
+          <h3>A Product Pamphlet that Tells a Story</h3>
+          <div class="prose">
+            <p>
+              Designed a tri-fold product pamphlet for a skincare brand using Adobe InDesign and Illustrator. The brief called for something that felt premium yet approachable — with clean layouts, consistent typography and purposeful white space.
+            </p>
+            <p>
+              The result was a pamphlet that increased walk-in inquiries by 28% at the brand's retail location. The design system created for this project was later extended to packaging and social media.
+            </p>
+          </div>
+
+          <div class="skills-grid" style="margin-bottom:24px;">
+            <span class="skill-tag">Adobe InDesign</span>
+            <span class="skill-tag">Illustrator</span>
+            <span class="skill-tag">Print Design</span>
+          </div>
+
+          <a href="#" class="btn">
+            View Full Pamphlet
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- PAGE PAGINATION -->
+      <div class="page-pagination">
+        <a href="#concept-videos" class="pagination-link prev">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Concept Videos
+        </a>
+        <a href="#mock-projects" class="pagination-link next">
+          Mock Projects <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ── MOCK PROJECTS ──────────────────────────── -->
+    <section class="section" id="mock-projects">
+      <div class="section-eyebrow">Exploratory Work</div>
+      <h2 class="section-title reveal">Mock<br><em>Projects</em></h2>
+
+      <div class="prose reveal">
+        <p>
+          Self-initiated briefs and case studies designed to explore different industries, brand voices and design challenges. These projects reflect how I think — creatively and strategically.
+        </p>
+      </div>
+
+      <div class="mock-list reveal" style="transition-delay:0.1s">
+        <div class="mock-item">
+          <div class="mock-number">01</div>
+          <div class="mock-info">
+            <h4>Café Brand Identity — "Mitti & Milk"</h4>
+            <p>Full brand identity including logo, menu design, packaging and social kit for a fictional artisan café.</p>
+          </div>
+          <span class="mock-tag">Branding</span>
+        </div>
+
+        <div class="mock-item">
+          <div class="mock-number">02</div>
+          <div class="mock-info">
+            <h4>NGO Campaign — "Roots of Change"</h4>
+            <p>A digital campaign concept for a non-profit with poster design, email template and Instagram grid.</p>
+          </div>
+          <span class="mock-tag">Campaign</span>
+        </div>
+
+        <div class="mock-item">
+          <div class="mock-number">03</div>
+          <div class="mock-info">
+            <h4>E-Commerce Landing Page Redesign</h4>
+            <p>A Figma redesign of a fashion brand's landing page with improved UX hierarchy and visual contrast.</p>
+          </div>
+          <span class="mock-tag">UI / UX</span>
+        </div>
+
+        <div class="mock-item">
+          <div class="mock-number">04</div>
+          <div class="mock-info">
+            <h4>Annual Report Layout — Student Society</h4>
+            <p>A 12-page InDesign annual report layout for a student organisation, with data visualisations and editorial spreads.</p>
+          </div>
+          <span class="mock-tag">Editorial</span>
+        </div>
+
+        <div class="mock-item">
+          <div class="mock-number">05</div>
+          <div class="mock-info">
+            <h4>Product Packaging Concept — Herbal Teas</h4>
+            <p>Box packaging and label design for a fictional herbal tea line inspired by Indian botanicals and earthy palettes.</p>
+          </div>
+          <span class="mock-tag">Packaging</span>
+        </div>
+      </div>
+
+      <!-- PAGE PAGINATION -->
+      <div class="page-pagination">
+        <a href="#product-pamphlet" class="pagination-link prev">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Product Pamphlet
+        </a>
+        <a href="#introduction" class="pagination-link next">
+          Introduction <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ── CTA / FOOTER ───────────────────────────── -->
+    <section class="cta-section">
+      <div class="section-eyebrow">Get in Touch</div>
+      <h2 class="section-title">Let's make<br><em style="color:var(--accent);">something together.</em></h2>
+      <div class="prose">
+        I'm open to creative collaborations, freelance projects and full-time opportunities in design, content and marketing.
+      </div>
+      <a href="mailto:prachi@example.com" class="btn-outline">
+        Contact Me
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+      </a>
+    </section>
+
+  </main>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
