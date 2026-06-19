@@ -76,3 +76,55 @@ document.addEventListener('DOMContentLoaded', () => {
   handleRoute();
 });
 
+/* ── TALLY POPUP EMBED ──
+   Form ID from tally.so share link (e.g. tally.so/r/gDgqXN -> "gDgqXN").
+   Adjust TALLY_POPUP_WIDTH to change how wide the modal appears.
+── */
+const TALLY_FORM_ID = 'gDgqXN';
+const TALLY_POPUP_WIDTH = 800;
+
+function openContactForm() {
+  if (typeof Tally === 'undefined') return;
+
+  Tally.openPopup(TALLY_FORM_ID, {
+    layout: 'modal',
+    width: TALLY_POPUP_WIDTH,
+    overlay: true,
+    emoji: {
+      text: '👋',
+      animation: 'wave'
+    }
+  });
+}
+
+function initTallyContactForm() {
+  const btn = document.getElementById('contact-tally-btn');
+  if (btn) {
+    btn.addEventListener('click', openContactForm);
+  }
+}
+
+(function () {
+  const d = document;
+  const w = 'https://tally.so/widgets/embed.js';
+  const v = function () {
+    if (typeof Tally !== 'undefined') {
+      Tally.loadEmbeds();
+      initTallyContactForm();
+    } else {
+      d.querySelectorAll('iframe[data-tally-src]:not([src])').forEach(function (e) {
+        e.src = e.dataset.tallySrc;
+      });
+    }
+  };
+  if (typeof Tally !== 'undefined') {
+    v();
+  } else if (d.querySelector('script[src="' + w + '"]') == null) {
+    const s = d.createElement('script');
+    s.src = w;
+    s.onload = v;
+    s.onerror = v;
+    d.body.appendChild(s);
+  }
+})();
+

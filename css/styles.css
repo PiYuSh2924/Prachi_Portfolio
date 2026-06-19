@@ -774,3 +774,13 @@ body {
   transform: translateX(4px);
 }
 
+/* ── TALLY CONTACT POPUP ─────────────────────────────── */
+.tally-popup {
+  width: min(92vw, 800px) !important;
+  max-width: 92vw !important;
+}
+
+.tally-popup iframe {
+  width: 100% !important;
+}
+
